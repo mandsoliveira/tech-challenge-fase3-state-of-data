@@ -1,0 +1,79 @@
+{
+  "coletado_em": "2026-09-05T02:24:19.225749+00:00",
+  "conta": "242201276836",
+  "regiao": "us-east-1",
+  "bucket": "sod-fase3-datalake-242201276836",
+  "database_glue": "sod_fase3",
+  "execucoes": [
+    {
+      "job": "sod-fase3-bronze-para-silver",
+      "id_execucao": "jr_eeea969d0bef61eb2f3cb2586cceed7f3cd526284c9d9b6587da09a18f034b9a",
+      "estado": "SUCCEEDED",
+      "iniciado_em": "2026-09-04T23:18:13.178000-03:00",
+      "concluido_em": "2026-09-04T23:20:34.109000-03:00",
+      "duracao_segundos": 130,
+      "dpu_segundos": 260.0,
+      "versao_glue": "5.0",
+      "tipo_worker": "G.1X",
+      "numero_workers": 2
+    },
+    {
+      "job": "sod-fase3-silver-para-gold",
+      "id_execucao": "jr_5bfa06f1e8845f147e967c8d7101e352dbb1884c881afad9cc4e8cf44e50b818",
+      "estado": "SUCCEEDED",
+      "iniciado_em": "2026-09-04T23:20:45.877000-03:00",
+      "concluido_em": "2026-09-04T23:24:04.724000-03:00",
+      "duracao_segundos": 138,
+      "dpu_segundos": 277.0,
+      "versao_glue": "5.0",
+      "tipo_worker": "G.1X",
+      "numero_workers": 2
+    }
+  ],
+  "camadas": [
+    {
+      "camada": "bronze",
+      "objetos": 3,
+      "tamanho_mb": 39.93,
+      "amostra": [
+        "bronze/state_of_data/edicao=2023/state_of_data_2023.csv",
+        "bronze/state_of_data/edicao=2024/state_of_data_2024.csv",
+        "bronze/state_of_data/edicao=2025/state_of_data_2025.csv"
+      ]
+    },
+    {
+      "camada": "silver",
+      "objetos": 69,
+      "tamanho_mb": 8.51,
+      "amostra": [
+        "silver/respondentes/edicao=2023/part-00000-b269e0a2-c329-4307-be66-ea859b6d14e1.c000.snappy.parquet",
+        "silver/respondentes/edicao=2024/part-00001-b269e0a2-c329-4307-be66-ea859b6d14e1.c000.snappy.parquet",
+        "silver/respondentes/edicao=2025/part-00002-b269e0a2-c329-4307-be66-ea859b6d14e1.c000.snappy.parquet",
+        "silver/respondeu_multiescolha/edicao=2023/part-00000-91a12173-d32d-48b3-b979-6352b3dd27cc.c000.snappy.parquet",
+        "silver/respondeu_multiescolha/edicao=2023/part-00001-91a12173-d32d-48b3-b979-6352b3dd27cc.c000.snappy.parquet",
+        "silver/respondeu_multiescolha/edicao=2023/part-00002-91a12173-d32d-48b3-b979-6352b3dd27cc.c000.snappy.parquet",
+        "silver/respondeu_multiescolha/edicao=2023/part-00003-91a12173-d32d-48b3-b979-6352b3dd27cc.c000.snappy.parquet",
+        "silver/respondeu_multiescolha/edicao=2023/part-00004-91a12173-d32d-48b3-b979-6352b3dd27cc.c000.snappy.parquet",
+        "silver/respondeu_multiescolha/edicao=2023/part-00005-91a12173-d32d-48b3-b979-6352b3dd27cc.c000.snappy.parquet",
+        "silver/respondeu_multiescolha/edicao=2023/part-00006-91a12173-d32d-48b3-b979-6352b3dd27cc.c000.snappy.parquet"
+      ]
+    },
+    {
+      "camada": "gold",
+      "objetos": 41,
+      "tamanho_mb": 0.22,
+      "amostra": [
+        "gold/adocao_ia/part-00000-acd40e33-d78b-4889-ae7f-4959967438cc-c000.snappy.parquet",
+        "gold/adocao_ia/part-00001-acd40e33-d78b-4889-ae7f-4959967438cc-c000.snappy.parquet",
+        "gold/adocao_ia/part-00002-acd40e33-d78b-4889-ae7f-4959967438cc-c000.snappy.parquet",
+        "gold/diversidade/part-00000-12692b4f-25ce-4d26-b2ba-3bca374a8746-c000.snappy.parquet",
+        "gold/diversidade/part-00001-12692b4f-25ce-4d26-b2ba-3bca374a8746-c000.snappy.parquet",
+        "gold/diversidade/part-00002-12692b4f-25ce-4d26-b2ba-3bca374a8746-c000.snappy.parquet",
+        "gold/diversidade/part-00003-12692b4f-25ce-4d26-b2ba-3bca374a8746-c000.snappy.parquet",
+        "gold/diversidade/part-00004-12692b4f-25ce-4d26-b2ba-3bca374a8746-c000.snappy.parquet",
+        "gold/diversidade/part-00005-12692b4f-25ce-4d26-b2ba-3bca374a8746-c000.snappy.parquet",
+        "gold/diversidade/part-00006-12692b4f-25ce-4d26-b2ba-3bca374a8746-c000.snappy.parquet"
+      ]
+    }
+  ]
+}

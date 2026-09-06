@@ -1,0 +1,25 @@
+# Tech Challenge Fase 3 — State of Data Brasil
+#
+# Versões alinhadas ao runtime do AWS Glue 5.0 (Spark 3.5.4, Python 3.11).
+# Manter o PySpark local na mesma versão do Glue é o que garante que o código
+# validado localmente se comporte igual no job.
+#
+# IMPORTANTE: instalar em venv com Python 3.10 ou 3.11.
+# O PySpark 3.5.x não é compatível com Python 3.12+.
+#
+#   /opt/homebrew/bin/python3.10 -m venv .venv-spark
+#   .venv-spark/bin/pip install -r requirements.txt
+#
+# O Spark local também exige Java 17 (mesma versão do Glue 5.0):
+#
+#   brew install openjdk@17
+#   export JAVA_HOME=/opt/homebrew/opt/openjdk@17
+
+pyspark==3.5.4
+pandas==2.2.3
+pyarrow==17.0.0
+matplotlib==3.9.2
+seaborn==0.13.2
+boto3==1.35.36
+pytest==8.3.3
+jupyter==1.1.1

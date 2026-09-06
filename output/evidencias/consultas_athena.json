@@ -1,0 +1,1864 @@
+{
+  "coletado_em": "2026-09-05T02:57:59.437063+00:00",
+  "database": "sod_fase3",
+  "regiao": "us-east-1",
+  "consultas": 16,
+  "falhas": 0,
+  "bytes_escaneados_total": 24227,
+  "resultados": [
+    {
+      "id": "77e6ddac-be0c-4bfe-a9fd-4167b738686d",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 1452,
+      "milissegundos": 646,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "cargo",
+        "quantidade",
+        "percentual",
+        "respondentes_validos",
+        "taxa_resposta"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Analista de Dados/Data Analyst",
+          "599",
+          "23.95",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Cientista de Dados/Data Scientist",
+          "424",
+          "16.95",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Engenheiro de Dados/Data Engineer/Data Architect",
+          "402",
+          "16.07",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Analista de BI/BI Analyst",
+          "215",
+          "8.6",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Outra Opção",
+          "206",
+          "8.24",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Analista de Negócios/Business Analyst",
+          "141",
+          "5.64",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Analytics Engineer",
+          "135",
+          "5.4",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Engenheiro de Machine Learning/ML Engineer/AI Engineer",
+          "106",
+          "4.24",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Desenvolvedor/ Engenheiro de Software/ Analista de Sistemas",
+          "106",
+          "4.24",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Analista de Suporte/Analista Técnico",
+          "55",
+          "2.2",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Data Product Manager/ Product Manager (PM/APM/DPM/GPM/PO)",
+          "33",
+          "1.32",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Arquiteto de Dados/Data Architect",
+          "28",
+          "1.12",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Outras Engenharias (não inclui dev)",
+          "26",
+          "1.04",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Professor/Pesquisador",
+          "16",
+          "0.64",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2025",
+          "Estatístico",
+          "9",
+          "0.36",
+          "2501",
+          "71.56"
+        ],
+        [
+          "2024",
+          "Analista de Dados/Data Analyst",
+          "957",
+          "25.07",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Cientista de Dados/Data Scientist",
+          "687",
+          "17.99",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Engenheiro de Dados/Data Engineer/Data Architect",
+          "613",
+          "16.06",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Analista de BI/BI Analyst",
+          "396",
+          "10.37",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Outra Opção",
+          "254",
+          "6.65",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Analytics Engineer",
+          "228",
+          "5.97",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Analista de Negócios/Business Analyst",
+          "184",
+          "4.82",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Desenvolvedor/ Engenheiro de Software/ Analista de Sistemas",
+          "122",
+          "3.2",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Engenheiro de Machine Learning/ML Engineer/AI Engineer",
+          "103",
+          "2.7",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Data Product Manager/ Product Manager (PM/APM/DPM/GPM/PO)",
+          "80",
+          "2.1",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Analista de Suporte/Analista Técnico",
+          "79",
+          "2.07",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Arquiteto de Dados/Data Architect",
+          "48",
+          "1.26",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Outras Engenharias (não inclui dev)",
+          "29",
+          "0.76",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Professor/Pesquisador",
+          "21",
+          "0.55",
+          "3818",
+          "73.18"
+        ],
+        [
+          "2024",
+          "Estatístico",
+          "17",
+          "0.45",
+          "3818",
+          "73.18"
+        ]
+      ],
+      "titulo": "Os dez cargos mais frequentes em cada edição, com a base que sustenta",
+      "pergunta": "1. Como está estruturado o mercado brasileiro de Dados?",
+      "sql": "SELECT\n    edicao,\n    categoria                AS cargo,\n    quantidade,\n    percentual,\n    respondentes_validos,\n    taxa_resposta\nFROM perfil_mercado\nWHERE metrica = 'cargo'\n  AND NOT fragil\nORDER BY edicao DESC, percentual DESC\nLIMIT 30"
+    },
+    {
+      "id": "76e1a8e3-dc42-453e-9ce9-a1d30b76478e",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 3658,
+      "milissegundos": 669,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "senioridade",
+        "salario_medio",
+        "salario_mediano",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Especialista/Staff+",
+          "20372.96",
+          "18000.5",
+          "349"
+        ],
+        [
+          "2025",
+          "Sênior",
+          "14621.7",
+          "14000.5",
+          "858"
+        ],
+        [
+          "2025",
+          "Pleno",
+          "8314.29",
+          "7000.5",
+          "776"
+        ],
+        [
+          "2025",
+          "Júnior",
+          "4152.99",
+          "3500.5",
+          "518"
+        ],
+        [
+          "2024",
+          "Sênior",
+          "14702.97",
+          "14000.5",
+          "1573"
+        ],
+        [
+          "2024",
+          "Pleno",
+          "8047.7",
+          "7000.5",
+          "1377"
+        ],
+        [
+          "2024",
+          "Júnior",
+          "4163.5",
+          "3500.5",
+          "868"
+        ],
+        [
+          "2023",
+          "Sênior",
+          "13760.89",
+          "10000.5",
+          "1419"
+        ],
+        [
+          "2023",
+          "Pleno",
+          "7546.83",
+          "7000.5",
+          "1392"
+        ],
+        [
+          "2023",
+          "Júnior",
+          "3909.67",
+          "3500.5",
+          "1046"
+        ]
+      ],
+      "titulo": "Salário médio e mediano estimados por senioridade, a partir do ponto",
+      "pergunta": "2. Quais perfis profissionais são mais valorizados pelo mercado?",
+      "sql": "SELECT\n    edicao,\n    categoria                AS senioridade,\n    salario_medio,\n    salario_mediano,\n    respondentes_validos\nFROM salario_medio\nWHERE recorte = 'senioridade'\n  AND NOT fragil\nORDER BY edicao DESC, salario_medio DESC"
+    },
+    {
+      "id": "e1ccd564-b1ec-4d26-a1b3-8e4d27c55c98",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 3530,
+      "milissegundos": 759,
+      "erro": null,
+      "colunas": [
+        "cargo",
+        "salario_medio",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "Engenheiro de Machine Learning/ML Engineer/AI Engineer",
+          "19599.5",
+          "106"
+        ],
+        [
+          "Data Product Manager/ Product Manager (PM/APM/DPM/GPM/PO)",
+          "18591.36",
+          "33"
+        ],
+        [
+          "Engenheiro de Dados/Data Engineer/Data Architect",
+          "14505.45",
+          "402"
+        ],
+        [
+          "Desenvolvedor/ Engenheiro de Software/ Analista de Sistemas",
+          "13363.67",
+          "106"
+        ],
+        [
+          "Analytics Engineer",
+          "13311.61",
+          "135"
+        ],
+        [
+          "Cientista de Dados/Data Scientist",
+          "13012.28",
+          "424"
+        ],
+        [
+          "Analista de Negócios/Business Analyst",
+          "8890.57",
+          "141"
+        ],
+        [
+          "Analista de Dados/Data Analyst",
+          "8823.53",
+          "599"
+        ],
+        [
+          "Analista de BI/BI Analyst",
+          "7584.21",
+          "215"
+        ],
+        [
+          "Outra Opção",
+          "6680.09",
+          "206"
+        ],
+        [
+          "Analista de Suporte/Analista Técnico",
+          "6482.3",
+          "55"
+        ]
+      ],
+      "titulo": "Os cargos com maior salário médio na edição mais recente.",
+      "pergunta": "2. Quais perfis profissionais são mais valorizados pelo mercado?",
+      "sql": "SELECT\n    categoria                AS cargo,\n    salario_medio,\n    respondentes_validos\nFROM salario_medio\nWHERE recorte = 'cargo'\n  AND edicao = 2025\n  AND NOT fragil\nORDER BY salario_medio DESC\nLIMIT 15"
+    },
+    {
+      "id": "bc5dcc46-2304-481a-ad78-1cfab537c07a",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 1323,
+      "milissegundos": 578,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "nivel_senioridade",
+        "percentual_feminino",
+        "mulheres",
+        "total_no_nivel",
+        "aviso_metodologico"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Especialista/Staff+",
+          "20.06",
+          "70",
+          "349",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2025",
+          "Júnior",
+          "28.19",
+          "146",
+          "518",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2025",
+          "Pleno",
+          "22.42",
+          "174",
+          "776",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2025",
+          "Sênior",
+          "20.75",
+          "178",
+          "858",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2024",
+          "Júnior",
+          "27.88",
+          "242",
+          "868",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2024",
+          "Pleno",
+          "26.58",
+          "366",
+          "1377",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2024",
+          "Sênior",
+          "21.3",
+          "335",
+          "1573",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2023",
+          "Júnior",
+          "28.59",
+          "299",
+          "1046",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2023",
+          "Pleno",
+          "24.21",
+          "337",
+          "1392",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ],
+        [
+          "2023",
+          "Sênior",
+          "21.63",
+          "307",
+          "1419",
+          "A edicao 2025-2026 introduziu o nivel 'Especialista/Staff+', ausente nas anteriores. A queda do share de Senior entre edicoes reflete essa mudanca de categorias, nao necessariamente mudanca de mercado."
+        ]
+      ],
+      "titulo": "Atenção ao aviso: a edição 2025-2026 introduziu 'Especialista/Staff+'.",
+      "pergunta": "3. Qual é o cenário de diversidade de gênero nas carreiras de dados?",
+      "sql": "SELECT\n    edicao,\n    nivel_senioridade,\n    percentual               AS percentual_feminino,\n    quantidade               AS mulheres,\n    respondentes_validos     AS total_no_nivel,\n    aviso_metodologico\nFROM diversidade\nWHERE metrica = 'genero_por_senioridade'\n  AND categoria = 'Feminino'\n  AND NOT fragil\nORDER BY edicao DESC, nivel_senioridade"
+    },
+    {
+      "id": "1a9aeef0-6a35-46fd-9511-4f191c23977f",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 408,
+      "milissegundos": 733,
+      "erro": null,
+      "colunas": [
+        "faixa_salarial",
+        "percentual_feminino",
+        "total_na_faixa"
+      ],
+      "linhas": [
+        [
+          "de R$ 2.001/mês a R$ 3.000/mês",
+          "31.54",
+          "130"
+        ],
+        [
+          "de R$ 1.001/mês a R$ 2.000/mês",
+          "29.06",
+          "117"
+        ],
+        [
+          "de R$ 3.001/mês a R$ 4.000/mês",
+          "26.11",
+          "157"
+        ],
+        [
+          "de R$ 12.001/mês a R$ 16.000/mês",
+          "24.38",
+          "484"
+        ],
+        [
+          "de R$ 6.001/mês a R$ 8.000/mês",
+          "23.98",
+          "367"
+        ],
+        [
+          "de R$ 4.001/mês a R$ 6.000/mês",
+          "22.97",
+          "344"
+        ],
+        [
+          "de R$ 8.001/mês a R$ 12.000/mês",
+          "21.75",
+          "708"
+        ],
+        [
+          "de R$ 16.001/mês a R$ 20.000/mês",
+          "20.12",
+          "323"
+        ],
+        [
+          "de R$ 20.001/mês a R$ 25.000/mês",
+          "18.31",
+          "213"
+        ],
+        [
+          "de R$ 30.001/mês a R$ 40.000/mês",
+          "13.16",
+          "114"
+        ],
+        [
+          "de R$ 25.001/mês a R$ 30.000/mês",
+          "10.37",
+          "135"
+        ],
+        [
+          "Acima de R$ 40.001/mês",
+          "6.96",
+          "115"
+        ]
+      ],
+      "titulo": "Participação feminina por faixa salarial na edição mais recente,",
+      "pergunta": "3. Qual é o cenário de diversidade de gênero nas carreiras de dados?",
+      "sql": "SELECT\n    d.faixa_salarial,\n    d.percentual             AS percentual_feminino,\n    d.respondentes_validos   AS total_na_faixa\nFROM diversidade d\nWHERE d.metrica = 'genero_por_faixa_salarial'\n  AND d.categoria = 'Feminino'\n  AND d.edicao = 2025\n  AND NOT d.fragil\nORDER BY d.percentual DESC"
+    },
+    {
+      "id": "645a7f18-536f-4bf6-b099-c413de9fa9ad",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 370,
+      "milissegundos": 670,
+      "erro": null,
+      "colunas": [
+        "categoria_tecnologia",
+        "tecnologia",
+        "edicao",
+        "percentual",
+        "quantidade",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "banco_dados",
+          "PostgreSQL",
+          "2025",
+          "36.78",
+          "771",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "SQL SERVER",
+          "2025",
+          "33.49",
+          "702",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Databricks",
+          "2025",
+          "32.87",
+          "689",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "S3",
+          "2025",
+          "28.82",
+          "604",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "MySQL",
+          "2025",
+          "28.53",
+          "598",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Google BigQuery",
+          "2025",
+          "27.0",
+          "566",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Oracle",
+          "2025",
+          "19.56",
+          "410",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Amazon Athena",
+          "2025",
+          "15.22",
+          "319",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "MongoDB",
+          "2025",
+          "14.79",
+          "310",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "SQLite",
+          "2025",
+          "12.31",
+          "258",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Amazon Redshift",
+          "2025",
+          "11.02",
+          "231",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Snowflake",
+          "2025",
+          "9.11",
+          "191",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Amazon Aurora ou RDS",
+          "2025",
+          "8.16",
+          "171",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Hive",
+          "2025",
+          "7.63",
+          "160",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "DynamoDB",
+          "2025",
+          "7.59",
+          "159",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Redis",
+          "2025",
+          "6.2",
+          "130",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "SAP HANA",
+          "2025",
+          "5.87",
+          "123",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "ElasticSearch",
+          "2025",
+          "5.77",
+          "121",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "MariaDB",
+          "2025",
+          "4.34",
+          "91",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Microsoft Access",
+          "2025",
+          "4.29",
+          "90",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Presto",
+          "2025",
+          "4.2",
+          "88",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "DB2",
+          "2025",
+          "3.48",
+          "73",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Firebase",
+          "2025",
+          "3.1",
+          "65",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Neo4J",
+          "2025",
+          "1.91",
+          "40",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Google Firestore",
+          "2025",
+          "1.77",
+          "37",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Firebird",
+          "2025",
+          "1.48",
+          "31",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Cassandra",
+          "2025",
+          "1.43",
+          "30",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Splunk",
+          "2025",
+          "0.76",
+          "16",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "HBase",
+          "2025",
+          "0.72",
+          "15",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Datomic",
+          "2025",
+          "0.62",
+          "13",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Sybase",
+          "2025",
+          "0.62",
+          "13",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "Vertica",
+          "2025",
+          "0.33",
+          "7",
+          "2096"
+        ],
+        [
+          "banco_dados",
+          "CoachDB",
+          "2025",
+          "0.29",
+          "6",
+          "2096"
+        ],
+        [
+          "bi_dia_a_dia",
+          "Microsoft PowerBI",
+          "2025",
+          "59.02",
+          "1243",
+          "2106"
+        ],
+        [
+          "bi_dia_a_dia",
+          "Looker",
+          "2025",
+          "22.55",
+          "475",
+          "2106"
+        ],
+        [
+          "bi_dia_a_dia",
+          "Looker Studio(Google Data Studio)",
+          "2025",
+          "15.57",
+          "328",
+          "2106"
+        ],
+        [
+          "bi_dia_a_dia",
+          "Tableau",
+          "2025",
+          "13.63",
+          "287",
+          "2106"
+        ],
+        [
+          "bi_dia_a_dia",
+          "Não utilizo nenhuma ferramenta de BI no trabalho",
+          "2025",
+          "11.4",
+          "240",
+          "2106"
+        ],
+        [
+          "bi_dia_a_dia",
+          "Fazemos todas as análises utilizando apenas Excel ou planilhas do google",
+          "2025",
+          "10.3",
+          "217",
+          "2106"
+        ],
+        [
+          "bi_dia_a_dia",
+          "Grafana",
+          "2025",
+          "8.69",
+          "183",
+          "2106"
+        ]
+      ],
+      "titulo": "Múltipla escolha: a soma dos percentuais excede 100% porque um",
+      "pergunta": "4. Quais tecnologias apresentam maior adoção entre os profissionais?",
+      "sql": "SELECT\n    dimensao                 AS categoria_tecnologia,\n    opcao                    AS tecnologia,\n    edicao,\n    percentual,\n    quantidade,\n    respondentes_validos\nFROM tecnologias\nWHERE dimensao IN ('cloud_dia_a_dia', 'banco_dados', 'bi_dia_a_dia')\n  AND edicao = 2025\n  AND NOT fragil\nORDER BY dimensao, percentual DESC"
+    },
+    {
+      "id": "76f2bc43-8cbd-4096-b846-1e11afcf90cd",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 2717,
+      "milissegundos": 605,
+      "erro": null,
+      "colunas": [
+        "cloud",
+        "pct_2023_2024",
+        "pct_2024_2025",
+        "pct_2025_2026",
+        "variacao_pp"
+      ],
+      "linhas": [
+        [
+          "Amazon Web Services (AWS)",
+          "30.61",
+          "44.13",
+          "48.28",
+          "17.67"
+        ],
+        [
+          "Azure (Microsoft)",
+          "42.32",
+          "30.87",
+          "34.83",
+          "-7.490000000000002"
+        ],
+        [
+          "Google Cloud (GCP)",
+          "31.58",
+          "29.26",
+          "30.87",
+          "-0.7099999999999973"
+        ],
+        [
+          "Servidores On Premise/Não utilizamos Cloud",
+          "16.11",
+          "12.9",
+          "14.31",
+          "-1.799999999999999"
+        ],
+        [
+          "Cloud Própria",
+          "6.95",
+          "5.32",
+          "5.44",
+          "-1.5099999999999998"
+        ],
+        [
+          "Oracle Cloud",
+          "4.26",
+          "3.98",
+          "4.48",
+          "0.22000000000000064"
+        ],
+        [
+          "IBM",
+          "1.3",
+          "1.67",
+          "1.19",
+          "-0.1100000000000001"
+        ]
+      ],
+      "titulo": "Evolução da adoção de cloud nas três edições, em formato pivotado.",
+      "pergunta": "4. Quais tecnologias apresentam maior adoção entre os profissionais?",
+      "sql": "SELECT\n    opcao                    AS cloud,\n    MAX(CASE WHEN edicao = 2023 THEN percentual END) AS pct_2023_2024,\n    MAX(CASE WHEN edicao = 2024 THEN percentual END) AS pct_2024_2025,\n    MAX(CASE WHEN edicao = 2025 THEN percentual END) AS pct_2025_2026,\n    MAX(CASE WHEN edicao = 2025 THEN percentual END)\n        - MAX(CASE WHEN edicao = 2023 THEN percentual END) AS variacao_pp\nFROM tecnologias\nWHERE dimensao = 'cloud_dia_a_dia'\nGROUP BY opcao\nORDER BY pct_2025_2026 DESC"
+    },
+    {
+      "id": "764265eb-b365-4103-9b77-fc9d61485d09",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 2496,
+      "milissegundos": 684,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "forma_de_uso",
+        "percentual",
+        "quantidade",
+        "respondentes_validos",
+        "taxa_resposta"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "A empresa que trabalho paga pelas soluções de AI Generativa com foco em produtividade",
+          "42.36",
+          "892",
+          "2106",
+          "60.26"
+        ],
+        [
+          "2025",
+          "Uso soluções gratuitas de AI Generativa com foco em produtividade",
+          "30.53",
+          "643",
+          "2106",
+          "60.26"
+        ],
+        [
+          "2025",
+          "Uso soluções do tipo Copilot",
+          "29.82",
+          "628",
+          "2106",
+          "60.26"
+        ],
+        [
+          "2025",
+          "Uso e pago pelas soluções de AI Generativa com foco em produtividade",
+          "26.92",
+          "567",
+          "2106",
+          "60.26"
+        ],
+        [
+          "2025",
+          "Não uso soluções de AI Generativa com foco em produtividade",
+          "2.09",
+          "44",
+          "2106",
+          "60.26"
+        ],
+        [
+          "2024",
+          "Uso soluções gratuitas de AI Generativa com foco em produtividade",
+          "53.72",
+          "1944",
+          "3619",
+          "69.37"
+        ],
+        [
+          "2024",
+          "Uso soluções do tipo Copilot",
+          "23.71",
+          "858",
+          "3619",
+          "69.37"
+        ],
+        [
+          "2024",
+          "A empresa que trabalho paga pelas soluções de AI Generativa com foco em produtividade",
+          "19.26",
+          "697",
+          "3619",
+          "69.37"
+        ],
+        [
+          "2024",
+          "Uso e pago pelas soluções de AI Generativa com foco em produtividade",
+          "15.53",
+          "562",
+          "3619",
+          "69.37"
+        ],
+        [
+          "2024",
+          "Não uso soluções de AI Generativa com foco em produtividade",
+          "6.55",
+          "237",
+          "3619",
+          "69.37"
+        ],
+        [
+          "2023",
+          "Uso soluções gratuitas de AI Generativa com foco em produtividade",
+          "63.65",
+          "2401",
+          "3772",
+          "71.26"
+        ],
+        [
+          "2023",
+          "Não uso soluções de AI Generativa com foco em produtividade",
+          "19.72",
+          "744",
+          "3772",
+          "71.26"
+        ],
+        [
+          "2023",
+          "Uso soluções do tipo Copilot",
+          "11.77",
+          "444",
+          "3772",
+          "71.26"
+        ],
+        [
+          "2023",
+          "Uso e pago pelas soluções de AI Generativa com foco em produtividade",
+          "6.92",
+          "261",
+          "3772",
+          "71.26"
+        ],
+        [
+          "2023",
+          "A empresa que trabalho paga pelas soluções de AI Generativa com foco em produtividade",
+          "6.36",
+          "240",
+          "3772",
+          "71.26"
+        ]
+      ],
+      "titulo": "Uso de IA generativa no trabalho. Note a `taxa_resposta`: a pergunta é",
+      "pergunta": "5. Qual é o índice de adoção de Inteligência Artificial e seu impacto?",
+      "sql": "SELECT\n    edicao,\n    categoria                AS forma_de_uso,\n    percentual,\n    quantidade,\n    respondentes_validos,\n    taxa_resposta\nFROM adocao_ia\nWHERE dimensao = 'usa_chatgpt_copilot'\nORDER BY edicao DESC, percentual DESC"
+    },
+    {
+      "id": "0037899e-807a-40c9-9a88-eb4008048c6c",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 174,
+      "milissegundos": 565,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "prioridade_declarada",
+        "percentual",
+        "gestores_que_responderam",
+        "pct_da_base_total",
+        "aviso_metodologico"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Sim, está entre nossas principais prioridades para os próximos 2-4 anos (com discussões de iniciativas e orçamentos de curto a médio prazo).",
+          "36.81",
+          "652",
+          "18.66",
+          "Pergunta respondida apenas por quem atua como gestor. Verifique taxa_resposta antes de generalizar o resultado para o mercado."
+        ],
+        [
+          "2025",
+          "Mais ou menos... É uma das várias iniciativas que estamos impulsionando, mas não é uma prioridade (tratam-se de iniciativas isoladas e com pouco foco).",
+          "25.92",
+          "652",
+          "18.66",
+          "Pergunta respondida apenas por quem atua como gestor. Verifique taxa_resposta antes de generalizar o resultado para o mercado."
+        ],
+        [
+          "2025",
+          "Sim, é nossa principal prioridade como empresa (com foco executivo significativo e alocação de orçamento relevante).",
+          "23.77",
+          "652",
+          "18.66",
+          "Pergunta respondida apenas por quem atua como gestor. Verifique taxa_resposta antes de generalizar o resultado para o mercado."
+        ],
+        [
+          "2025",
+          "Não é uma iniciativa que estamos focando e não tem sido uma prioridade.",
+          "11.35",
+          "652",
+          "18.66",
+          "Pergunta respondida apenas por quem atua como gestor. Verifique taxa_resposta antes de generalizar o resultado para o mercado."
+        ],
+        [
+          "2025",
+          "Não sei opinar sobre esse assunto.",
+          "2.15",
+          "652",
+          "18.66",
+          "Pergunta respondida apenas por quem atua como gestor. Verifique taxa_resposta antes de generalizar o resultado para o mercado."
+        ]
+      ],
+      "titulo": "IA como prioridade declarada pela empresa. Só gestores respondem, então",
+      "pergunta": "5. Qual é o índice de adoção de Inteligência Artificial e seu impacto?",
+      "sql": "SELECT\n    edicao,\n    categoria                AS prioridade_declarada,\n    percentual,\n    respondentes_validos     AS gestores_que_responderam,\n    taxa_resposta            AS pct_da_base_total,\n    aviso_metodologico\nFROM adocao_ia\nWHERE dimensao = 'ia_e_prioridade'\n  AND edicao = 2025\nORDER BY percentual DESC"
+    },
+    {
+      "id": "50cdcb4b-2b4a-4e82-a3df-20bedd3fc436",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 2408,
+      "milissegundos": 625,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "motivo_para_nao_adotar",
+        "percentual",
+        "quantidade",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Falta de expertise ou falta de recursos",
+          "38.84",
+          "228",
+          "587"
+        ],
+        [
+          "2025",
+          "Dados da empresa não estão prontos para uso de IA Generativa",
+          "36.8",
+          "216",
+          "587"
+        ],
+        [
+          "2025",
+          "Falta de compreensão dos casos de uso",
+          "32.03",
+          "188",
+          "587"
+        ],
+        [
+          "2025",
+          "Retorno sobre investimento (ROI) não comprovado de IA Generativa",
+          "28.45",
+          "167",
+          "587"
+        ],
+        [
+          "2025",
+          "Preocupações com segurança e privacidade de dados",
+          "27.77",
+          "163",
+          "587"
+        ],
+        [
+          "2025",
+          "Falta de confiabilidade das saídas (alucinação dos modelos)",
+          "17.04",
+          "100",
+          "587"
+        ],
+        [
+          "2025",
+          "Incerteza em relação a regulamentação",
+          "9.88",
+          "58",
+          "587"
+        ],
+        [
+          "2025",
+          "Preocupações com propriedade intelectual",
+          "9.2",
+          "54",
+          "587"
+        ],
+        [
+          "2025",
+          "Alta direção da empresa não vê valor ou não vê como prioridade",
+          "7.5",
+          "44",
+          "587"
+        ]
+      ],
+      "titulo": "Barreiras à adoção de IA, na visão de quem gerencia times de dados.",
+      "pergunta": "5. Qual é o índice de adoção de Inteligência Artificial e seu impacto?",
+      "sql": "SELECT\n    edicao,\n    categoria                AS motivo_para_nao_adotar,\n    percentual,\n    quantidade,\n    respondentes_validos\nFROM adocao_ia\nWHERE dimensao = 'motivos_nao_usar_ia'\n  AND edicao = 2025\n  AND NOT fragil\nORDER BY percentual DESC\nLIMIT 10"
+    },
+    {
+      "id": "2ea9145e-2599-4d87-a5fc-1d712ee41693",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 562,
+      "milissegundos": 614,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "regiao",
+        "percentual",
+        "quantidade",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Sudeste",
+          "64.42",
+          "2171",
+          "3370"
+        ],
+        [
+          "2025",
+          "Sul",
+          "16.02",
+          "540",
+          "3370"
+        ],
+        [
+          "2025",
+          "Nordeste",
+          "11.28",
+          "380",
+          "3370"
+        ],
+        [
+          "2025",
+          "Centro-oeste",
+          "6.85",
+          "231",
+          "3370"
+        ],
+        [
+          "2025",
+          "Norte",
+          "1.42",
+          "48",
+          "3370"
+        ],
+        [
+          "2024",
+          "Sudeste",
+          "61.71",
+          "3132",
+          "5075"
+        ],
+        [
+          "2024",
+          "Sul",
+          "20.32",
+          "1031",
+          "5075"
+        ],
+        [
+          "2024",
+          "Nordeste",
+          "10.17",
+          "516",
+          "5075"
+        ],
+        [
+          "2024",
+          "Centro-oeste",
+          "6.54",
+          "332",
+          "5075"
+        ],
+        [
+          "2024",
+          "Norte",
+          "1.26",
+          "64",
+          "5075"
+        ],
+        [
+          "2023",
+          "Sudeste",
+          "61.39",
+          "3173",
+          "5169"
+        ],
+        [
+          "2023",
+          "Sul",
+          "18.59",
+          "961",
+          "5169"
+        ],
+        [
+          "2023",
+          "Nordeste",
+          "11.76",
+          "608",
+          "5169"
+        ],
+        [
+          "2023",
+          "Centro-oeste",
+          "6.66",
+          "344",
+          "5169"
+        ],
+        [
+          "2023",
+          "Norte",
+          "1.61",
+          "83",
+          "5169"
+        ]
+      ],
+      "titulo": "Concentração geográfica da força de trabalho em dados.",
+      "pergunta": "6. Existem diferenças relevantes entre regiões, senioridades ou",
+      "sql": "SELECT\n    edicao,\n    categoria                AS regiao,\n    percentual,\n    quantidade,\n    respondentes_validos\nFROM recortes_comparativos\nWHERE metrica = 'regiao_geral'\nORDER BY edicao DESC, percentual DESC"
+    },
+    {
+      "id": "9fd50495-ca26-4166-aaae-cf0e1acba76a",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 3498,
+      "milissegundos": 587,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "regiao",
+        "salario_medio",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Sudeste",
+          "13696.04",
+          "2025"
+        ],
+        [
+          "2025",
+          "Centro-oeste",
+          "13038.94",
+          "221"
+        ],
+        [
+          "2025",
+          "Norte",
+          "12958.76",
+          "36"
+        ],
+        [
+          "2025",
+          "Sul",
+          "12375.97",
+          "510"
+        ],
+        [
+          "2025",
+          "Nordeste",
+          "10436.66",
+          "329"
+        ],
+        [
+          "2024",
+          "Sudeste",
+          "12825.83",
+          "2940"
+        ],
+        [
+          "2024",
+          "Sul",
+          "10513.13",
+          "989"
+        ],
+        [
+          "2024",
+          "Centro-oeste",
+          "10165.49",
+          "300"
+        ],
+        [
+          "2024",
+          "Nordeste",
+          "9832.69",
+          "447"
+        ],
+        [
+          "2024",
+          "Norte",
+          "8711.02",
+          "57"
+        ],
+        [
+          "2023",
+          "Sudeste",
+          "11064.68",
+          "2890"
+        ],
+        [
+          "2023",
+          "Centro-oeste",
+          "10332.74",
+          "304"
+        ],
+        [
+          "2023",
+          "Sul",
+          "9603.76",
+          "886"
+        ],
+        [
+          "2023",
+          "Nordeste",
+          "8098.29",
+          "501"
+        ],
+        [
+          "2023",
+          "Norte",
+          "7877.3",
+          "69"
+        ]
+      ],
+      "titulo": "Salário médio por região: expõe a assimetria que sustenta a",
+      "pergunta": "6. Existem diferenças relevantes entre regiões, senioridades ou",
+      "sql": "SELECT\n    edicao,\n    categoria                AS regiao,\n    salario_medio,\n    respondentes_validos\nFROM salario_medio\nWHERE recorte = 'regiao'\n  AND NOT fragil\nORDER BY edicao DESC, salario_medio DESC"
+    },
+    {
+      "id": "2b41e38f-8cf2-419b-9935-d192defb0f70",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 348,
+      "milissegundos": 724,
+      "erro": null,
+      "colunas": [
+        "momento",
+        "modelo_de_trabalho",
+        "percentual",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "modelo_trabalho_geral",
+          "Modelo 100% remoto",
+          "39.71",
+          "3228"
+        ],
+        [
+          "modelo_trabalho_geral",
+          "Modelo 100% presencial",
+          "20.76",
+          "3228"
+        ],
+        [
+          "modelo_trabalho_geral",
+          "Modelo híbrido com dias fixos de trabalho presencial",
+          "19.98",
+          "3228"
+        ],
+        [
+          "modelo_trabalho_geral",
+          "Modelo híbrido flexível (o funcionário tem liberdade para escolher quando estar no escritório presencialmente)",
+          "19.55",
+          "3228"
+        ],
+        [
+          "modelo_trabalho_ideal",
+          "Modelo híbrido flexível (o funcionário tem liberdade para escolher quando estar no escritório presencialmente)",
+          "42.97",
+          "3228"
+        ],
+        [
+          "modelo_trabalho_ideal",
+          "Modelo 100% remoto",
+          "42.13",
+          "3228"
+        ],
+        [
+          "modelo_trabalho_ideal",
+          "Modelo híbrido com dias fixos de trabalho presencial",
+          "13.04",
+          "3228"
+        ],
+        [
+          "modelo_trabalho_ideal",
+          "Modelo 100% presencial",
+          "1.86",
+          "3228"
+        ]
+      ],
+      "titulo": "Modelo de trabalho atual contra o modelo considerado ideal. A distância",
+      "pergunta": "6. Existem diferenças relevantes entre regiões, senioridades ou",
+      "sql": "SELECT\n    metrica                  AS momento,\n    categoria                AS modelo_de_trabalho,\n    percentual,\n    respondentes_validos\nFROM recortes_comparativos\nWHERE metrica IN ('modelo_trabalho_geral', 'modelo_trabalho_ideal')\n  AND edicao = 2025\nORDER BY metrica, percentual DESC"
+    },
+    {
+      "id": "361600f5-b340-4808-826a-a4a9c523c6a3",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 338,
+      "milissegundos": 604,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "desafio",
+        "percentual",
+        "quantidade",
+        "respondentes_validos",
+        "taxa_resposta"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Dividir o tempo entre entregas técnicas e gestão",
+          "36.35",
+          "237",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Gerenciar a expectativa das áreas",
+          "33.28",
+          "217",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Gestão de projetos envolvendo áreas multidisciplinares",
+          "29.14",
+          "190",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Gerar valor para as áreas de negócios",
+          "23.47",
+          "153",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Organizar as informações com qualidade e confiabilidade",
+          "21.63",
+          "141",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Garantir a manutenção dos projetos e modelos em produção",
+          "20.4",
+          "133",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Conseguir levar inovação para a empresa",
+          "18.71",
+          "122",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Garantir (ROI) em projetos de dados",
+          "13.5",
+          "88",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Gestão de equipes no ambiente remoto",
+          "11.81",
+          "77",
+          "652",
+          "18.66"
+        ],
+        [
+          "2025",
+          "Convencer a empresa a aumentar investimentos",
+          "10.89",
+          "71",
+          "652",
+          "18.66"
+        ]
+      ],
+      "titulo": "Maiores desafios declarados por gestores de times de dados.",
+      "pergunta": "7. Quais oportunidades e desafios para quem investe em Dados e IA?",
+      "sql": "SELECT\n    edicao,\n    categoria                AS desafio,\n    percentual,\n    quantidade,\n    respondentes_validos,\n    taxa_resposta\nFROM oportunidades_desafios\nWHERE dimensao = 'desafios_gestor'\n  AND edicao = 2025\n  AND NOT fragil\nORDER BY percentual DESC\nLIMIT 10"
+    },
+    {
+      "id": "2a747e8d-c544-4f05-9a23-a90fc9ef427c",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 338,
+      "milissegundos": 641,
+      "erro": null,
+      "colunas": [
+        "criterio",
+        "percentual",
+        "quantidade",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "Remuneração/Salário",
+          "83.21",
+          "2686",
+          "3228"
+        ],
+        [
+          "Flexibilidade de trabalho remoto",
+          "56.6",
+          "1827",
+          "3228"
+        ],
+        [
+          "Plano de carreira e oportunidades de crescimento",
+          "32.34",
+          "1044",
+          "3228"
+        ],
+        [
+          "Benefícios",
+          "24.5",
+          "791",
+          "3228"
+        ],
+        [
+          "Oportunidade de aprendizado e trabalhar com referências",
+          "23.67",
+          "764",
+          "3228"
+        ],
+        [
+          "Ambiente e clima de trabalho",
+          "21.41",
+          "691",
+          "3228"
+        ],
+        [
+          "Propósito do trabalho e da empresa",
+          "15.71",
+          "507",
+          "3228"
+        ],
+        [
+          "Maturidade da empresa em termos de tecnologia e dados",
+          "10.84",
+          "350",
+          "3228"
+        ],
+        [
+          "Qualidade dos gestores e líderes",
+          "8.05",
+          "260",
+          "3228"
+        ],
+        [
+          "Reputação que a empresa tem no mercado",
+          "5.64",
+          "182",
+          "3228"
+        ]
+      ],
+      "titulo": "Critérios que os profissionais consideram ao escolher onde trabalhar.",
+      "pergunta": "7. Quais oportunidades e desafios para quem investe em Dados e IA?",
+      "sql": "SELECT\n    categoria                AS criterio,\n    percentual,\n    quantidade,\n    respondentes_validos\nFROM oportunidades_desafios\nWHERE dimensao = 'criterios_escolha'\n  AND edicao = 2025\n  AND NOT fragil\nORDER BY percentual DESC\nLIMIT 10"
+    },
+    {
+      "id": "2b90ebb6-8fbc-423c-ad02-84009dbc68a3",
+      "estado": "SUCCEEDED",
+      "bytes_escaneados": 607,
+      "milissegundos": 855,
+      "erro": null,
+      "colunas": [
+        "edicao",
+        "intencao",
+        "percentual",
+        "respondentes_validos"
+      ],
+      "linhas": [
+        [
+          "2025",
+          "Não estou buscando, mas me considero aberto a outras oportunidades",
+          "40.49",
+          "3228"
+        ],
+        [
+          "2025",
+          "Estou em busca de oportunidades dentro ou fora do Brasil",
+          "25.34",
+          "3228"
+        ],
+        [
+          "2025",
+          "Não estou buscando e não pretendo mudar de emprego nos próximos 6 meses",
+          "24.91",
+          "3228"
+        ],
+        [
+          "2025",
+          "Estou em busca de oportunidades, mas apenas fora do Brasil",
+          "9.26",
+          "3228"
+        ],
+        [
+          "2024",
+          "Não estou buscando, mas me considero aberto a outras oportunidades",
+          "39.01",
+          "4863"
+        ],
+        [
+          "2024",
+          "Não estou buscando e não pretendo mudar de emprego nos próximos 6 meses",
+          "26.67",
+          "4863"
+        ],
+        [
+          "2024",
+          "Estou em busca de oportunidades dentro ou fora do Brasil",
+          "25.77",
+          "4863"
+        ],
+        [
+          "2024",
+          "Estou em busca de oportunidades, mas apenas fora do Brasil",
+          "8.55",
+          "4863"
+        ],
+        [
+          "2023",
+          "Não estou buscando, mas me considero aberto a outras oportunidades",
+          "37.05",
+          "4753"
+        ],
+        [
+          "2023",
+          "Estou em busca de oportunidades dentro ou fora do Brasil",
+          "28.15",
+          "4753"
+        ],
+        [
+          "2023",
+          "Não estou buscando e não pretendo mudar de emprego nos próximos 6 meses",
+          "25.46",
+          "4753"
+        ],
+        [
+          "2023",
+          "Estou em busca de oportunidades, mas apenas fora do Brasil",
+          "9.34",
+          "4753"
+        ]
+      ],
+      "titulo": "Intenção de trocar de emprego nos próximos 6 meses, por edição.",
+      "pergunta": "7. Quais oportunidades e desafios para quem investe em Dados e IA?",
+      "sql": "SELECT\n    edicao,\n    categoria                AS intencao,\n    percentual,\n    respondentes_validos\nFROM oportunidades_desafios\nWHERE dimensao = 'planos_mudar_6m'\nORDER BY edicao DESC, percentual DESC"
+    }
+  ]
+}

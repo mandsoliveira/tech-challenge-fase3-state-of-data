@@ -1,0 +1,210 @@
+<mxfile host="app.diagrams.net" agent="Kiro" version="24.7.17" type="device">
+  <diagram name="Arquitetura AWS" id="arquitetura-sod-fase3">
+    <mxGraphModel dx="1600" dy="1000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ================= TÍTULO ================= -->
+        <mxCell id="titulo" value="Tech Challenge Fase 3 — Plataforma de Dados e Analytics na AWS" style="text;html=1;fontSize=22;fontStyle=1;align=left;verticalAlign=middle;fontColor=#16191F;" vertex="1" parent="1">
+          <mxGeometry x="40" y="24" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitulo" value="State of Data Brasil — 3 edições (2023-2024, 2024-2025, 2025-2026) · 14.005 respondentes · Região us-east-1" style="text;html=1;fontSize=13;align=left;verticalAlign=middle;fontColor=#5A6C7D;" vertex="1" parent="1">
+          <mxGeometry x="40" y="54" width="900" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- ================= ORIGEM ================= -->
+        <mxCell id="grupo_origem" value="Origem externa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F7FA;strokeColor=#B9C4CF;dashed=1;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=12;fontStyle=1;fontColor=#5A6C7D;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="220" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="kaggle" value="Kaggle&#xa;Data Hackers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#879196;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kaggle_detalhe" value="3 arquivos CSV&#xa;~40 MB&#xa;399 / 403 / 388 colunas" style="text;html=1;fontSize=10;align=center;verticalAlign=middle;fontColor=#5A6C7D;" vertex="1" parent="1">
+          <mxGeometry x="70" y="244" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="upload" value="Upload validado&#xa;(boto3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#879196;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="310" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="upload_nota" value="valida linhas e colunas&#xa;antes de subir" style="text;html=1;fontSize=9;align=center;fontColor=#5A6C7D;" vertex="1" parent="1">
+          <mxGeometry x="70" y="362" width="160" height="34" as="geometry" />
+        </mxCell>
+
+        <!-- ================= DATA LAKE (S3) ================= -->
+        <mxCell id="grupo_lake" value="Amazon S3 — Data Lake  ·  bucket privado, SSE-S3, Block Public Access (4 flags)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1FAF5;strokeColor=#3F8624;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=12;fontStyle=1;fontColor=#3F8624;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="700" height="300" as="geometry" />
+        </mxCell>
+
+        <!-- Bronze -->
+        <mxCell id="bronze" value="BRONZE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CD7F32;strokeColor=none;fontColor=#FFFFFF;fontSize=13;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="330" y="170" width="190" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="bronze_detalhe" value="CSV bruto, cópia fiel&#xa;&#xa;bronze/state_of_data/&#xa;  edicao=2023/&#xa;  edicao=2024/&#xa;  edicao=2025/&#xa;&#xa;Sem transformação.&#xa;Permite reprocessar&#xa;tudo do zero." style="text;html=1;fontSize=10;align=left;verticalAlign=top;fontColor=#FFFFFF;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="198" width="190" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- Silver -->
+        <mxCell id="silver" value="SILVER" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C9BAB;strokeColor=none;fontColor=#FFFFFF;fontSize=13;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="550" y="170" width="190" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="silver_detalhe" value="Parquet harmonizado&#xa;&#xa;respondentes&#xa;  14.005 · 47 colunas&#xa;respostas_multiescolha&#xa;  169.155 (formato longo)&#xa;respondeu_multiescolha&#xa;  154.055 (denominador)&#xa;&#xa;particionado por edicao" style="text;html=1;fontSize=10;align=left;verticalAlign=top;fontColor=#FFFFFF;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="198" width="190" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- Gold -->
+        <mxCell id="gold" value="GOLD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4A017;strokeColor=none;fontColor=#FFFFFF;fontSize=13;fontStyle=1;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="770" y="170" width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="gold_detalhe" value="Parquet agregado&#xa;8 tabelas analíticas&#xa;&#xa;perfil_mercado&#xa;remuneracao · salario_medio&#xa;diversidade · tecnologias&#xa;adocao_ia&#xa;recortes_comparativos&#xa;oportunidades_desafios&#xa;&#xa;com respondentes_validos&#xa;e taxa_resposta" style="text;html=1;fontSize=10;align=left;verticalAlign=top;fontColor=#FFFFFF;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="770" y="198" width="200" height="185" as="geometry" />
+        </mxCell>
+
+        <!-- ================= GLUE JOBS ================= -->
+        <mxCell id="grupo_glue" value="AWS Glue — processamento distribuído com Apache Spark" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3EEFB;strokeColor=#7D4CDB;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=12;fontStyle=1;fontColor=#7D4CDB;" vertex="1" parent="1">
+          <mxGeometry x="300" y="450" width="700" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="job1" value="Glue Job 1&#xa;bronze → silver" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7D4CDB;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="490" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="job1_detalhe" value="sanitiza nomes de coluna&#xa;harmoniza as 3 edições&#xa;normaliza categorias&#xa;valida integridade" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#FFFFFF;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="330" y="527" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="job2" value="Glue Job 2&#xa;silver → gold" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7D4CDB;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="490" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="job2_detalhe" value="agrega por pergunta&#xa;de negócio&#xa;calcula denominador válido&#xa;marca recortes frágeis" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#FFFFFF;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="560" y="527" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="glue_config" value="Glue 5.0&#xa;Spark 3.5.4&#xa;Python 3.11&#xa;&#xa;G.1X × 2 workers&#xa;~130 s por job&#xa;537 DPU-s totais&#xa;≈ US$ 0,07" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7D4CDB;fontSize=9.5;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontColor=#5A6C7D;" vertex="1" parent="1">
+          <mxGeometry x="790" y="490" width="180" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- ================= CATÁLOGO E CONSUMO ================= -->
+        <mxCell id="grupo_consumo" value="Catalogação e consumo analítico" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#D97706;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=12;fontStyle=1;fontColor=#D97706;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="120" width="500" height="510" as="geometry" />
+        </mxCell>
+
+        <mxCell id="crawler" value="Glue Crawler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7D4CDB;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="165" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="crawler_detalhe" value="1 alvo S3 por tabela&#xa;infere schema&#xa;registra partições" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#5A6C7D;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="196" width="200" height="52" as="geometry" />
+        </mxCell>
+
+        <mxCell id="catalogo" value="Glue Data Catalog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7D4CDB;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="165" width="210" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="catalogo_detalhe" value="database sod_fase3&#xa;11 tabelas&#xa;3 Silver + 8 Gold" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#FFFFFF;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="196" width="210" height="52" as="geometry" />
+        </mxCell>
+
+        <mxCell id="athena" value="Amazon Athena" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97706;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="290" width="440" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="athena_detalhe" value="16 consultas SQL versionadas — uma seção por pergunta de negócio&#xa;Resultados em bucket privado (athena-results/, SSE-S3)&#xa;0,02 MB escaneados ≈ US$ 0,0008" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#FFFFFF;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="322" width="440" height="62" as="geometry" />
+        </mxCell>
+
+        <mxCell id="graficos" value="Notebooks + matplotlib" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97706;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="425" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="graficos_detalhe" value="9 gráficos, lidos da Gold&#xa;nunca dos CSVs brutos&#xa;base (n) em cada figura" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#5A6C7D;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="456" width="200" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="material" value="Material executivo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#16191F;strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="425" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="material_detalhe" value="DataViz e storytelling&#xa;recomendações para&#xa;contratação, capacitação&#xa;e investimento em IA" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#FFFFFF;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="456" width="210" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cloudwatch" value="CloudWatch Logs — métricas e log contínuo dos jobs (evidência de execução)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D13212;fontSize=10.5;fontColor=#D13212;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="550" width="440" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ================= GOVERNANÇA ================= -->
+        <mxCell id="grupo_governanca" value="Segurança e governança" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF2F2;strokeColor=#D13212;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=12;fontStyle=1;fontColor=#D13212;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="660" width="960" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="iam" value="IAM Role dedicada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D13212;fontSize=11;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="70" y="700" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="iam_detalhe" value="sod-fase3-glue-role&#xa;&#xa;política escopada ao ARN&#xa;do bucket do projeto&#xa;sem s3:* sobre *" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#5A6C7D;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="729" width="210" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="privacidade" value="Nenhum recurso público" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D13212;fontSize=11;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="300" y="700" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="privacidade_detalhe" value="Block Public Access nas&#xa;4 flags, no bucket e na conta&#xa;sem bucket policy&#xa;sem website hosting&#xa;sem CloudFront/API Gateway" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#5A6C7D;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="729" width="220" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="cripto" value="Criptografia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D13212;fontSize=11;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="540" y="700" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cripto_detalhe" value="SSE-S3 (AES256) em&#xa;repouso, no bucket e&#xa;em cada objeto&#xa;&#xa;resultados do Athena&#xa;também criptografados" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#5A6C7D;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="540" y="729" width="200" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="dados_nota" value="Dados sem PII" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D13212;fontSize=11;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="760" y="700" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dados_nota_detalhe" value="varredura em 71 colunas&#xa;de texto: 0 e-mails,&#xa;0 CPFs, 0 telefones&#xa;&#xa;único id é hash aleatório&#xa;base pública (ODbL)" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#5A6C7D;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="760" y="729" width="210" height="78" as="geometry" />
+        </mxCell>
+
+        <!-- ================= QUALIDADE ================= -->
+        <mxCell id="grupo_qualidade" value="Garantias de qualidade do dado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF6FF;strokeColor=#1F4E79;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=12;fontStyle=1;fontColor=#1F4E79;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="660" width="500" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qualidade_detalhe" value="1.  Validação do mapeamento semântico&#xa;     41 dimensões curadas à mão; os códigos das perguntas deslocam&#xa;     entre edições, então casar por código produz erro silencioso&#xa;&#xa;2.  Validações no pipeline&#xa;     contagem por edição, 13 faixas salariais, nomes válidos p/ Athena&#xa;&#xa;3.  Conferência cruzada&#xa;     recalcula as distribuições em pandas, por caminho independente,&#xa;     e compara com a Silver produzida pelo Spark" style="text;html=1;fontSize=9.5;align=left;verticalAlign=top;fontColor=#1F4E79;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="690" width="480" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- ================= FLUXO PRINCIPAL ================= -->
+        <mxCell id="seta_kaggle_upload" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#5A6C7D;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="kaggle_detalhe" target="upload">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_upload_bronze" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#3F8624;strokeWidth=3;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.75;" edge="1" parent="1" source="upload" target="bronze">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="seta_bronze_job1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7D4CDB;strokeWidth=3;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="bronze" target="job1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_job1_silver" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7D4CDB;strokeWidth=3;endArrow=block;endFill=1;exitX=0.75;exitY=0;entryX=0.25;entryY=1;" edge="1" parent="1" source="job1" target="silver">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_silver_job2" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7D4CDB;strokeWidth=3;endArrow=block;endFill=1;exitX=0.75;exitY=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="silver" target="job2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_job2_gold" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7D4CDB;strokeWidth=3;endArrow=block;endFill=1;exitX=0.9;exitY=0;entryX=0.4;entryY=1;" edge="1" parent="1" source="job2" target="gold">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="seta_lake_crawler" value="cataloga&#xa;Silver e Gold" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7D4CDB;strokeWidth=2;dashed=1;endArrow=block;endFill=1;fontSize=9;fontColor=#7D4CDB;exitX=1;exitY=0.2;entryX=0;entryY=0.5;" edge="1" parent="1" source="grupo_lake" target="crawler">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_crawler_catalogo" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#7D4CDB;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="crawler" target="catalogo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_catalogo_athena" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#D97706;strokeWidth=3;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.75;entryY=0;" edge="1" parent="1" source="catalogo" target="athena">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_athena_graficos" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#D97706;strokeWidth=3;endArrow=block;endFill=1;exitX=0.25;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="athena" target="graficos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_graficos_material" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#16191F;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="graficos" target="material">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="seta_jobs_cloudwatch" value="métricas e log" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#D13212;strokeWidth=2;dashed=1;endArrow=block;endFill=1;fontSize=9;fontColor=#D13212;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="glue_config" target="cloudwatch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ================= NOTA DE EXECUÇÃO DUAL ================= -->
+        <mxCell id="nota_dual" value="Execução dual: o mesmo código roda em Spark local e em Glue Job, sem alteração da lógica de transformação.&#xa;O ambiente é detectado em tempo de execução; só a resolução de caminhos muda. Validado: Glue e local produzem resultados idênticos." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;strokeColor=#D4A017;fontSize=10.5;align=left;verticalAlign=middle;spacingLeft=14;fontColor=#7A5C00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="640" width="700" height="46" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
