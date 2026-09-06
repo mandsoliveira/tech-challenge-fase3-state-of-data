@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------------------
+# Dados
+# ---------------------------------------------------------------------------
+# Os CSVs do Kaggle não são versionados: somam ~40 MB, são públicos sob Open
+# Database License e podem ser rebaixados a qualquer momento. O README explica
+# como obtê-los. Isto inclui os ZIPs originais em data/raw/originais_kaggle/.
+data/raw/
+
+# O Data Lake local é gerado pelo pipeline e reconstruído em ~50 s.
+data/lake/
+
+# ---------------------------------------------------------------------------
+# Ambientes e caches
+# ---------------------------------------------------------------------------
+.venv/
+.venv-spark/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Artefatos do Spark local
+spark-warehouse/
+metastore_db/
+derby.log
+
+# ---------------------------------------------------------------------------
+# Sistema
+# ---------------------------------------------------------------------------
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# O QUE É VERSIONADO DE PROPÓSITO
+# ---------------------------------------------------------------------------
+# Os artefatos abaixo SÃO entregáveis e devem ir para o repositório:
+#
+#   output/*.pptx              material executivo
+#   output/img/*.png           gráficos que sustentam o material
+#   output/evidencias/*.json   evidência de execução na AWS (requisito R16.4)
+#   arquitetura/*.drawio       fonte do diagrama
+#   arquitetura/*.png|.pdf     diagrama exportado
+#   notebooks/*.ipynb          notebook com as saídas da execução
+#   athena/*.sql               consultas analíticas
+#   docs/*.pdf                 enunciado do desafio
+#
+# Nenhum deles é ignorado. Se algum dia forem, a entrega fica incompleta.
