@@ -192,7 +192,12 @@ class ContextoExecucao:
             mensagem: texto a registrar.
         """
         instante = datetime.now(timezone.utc).strftime("%H:%M:%S")
-        print(f"[{instante}][{self.ambiente}] {mensagem}", flush=True)
+        # Logs podem ser preservados no notebook e publicados como evidência.
+        # Exiba apenas caminhos relativos e um bucket genérico; os caminhos
+        # reais continuam sendo usados normalmente pelas operações de I/O.
+        mensagem_publica = str(mensagem).replace(str(config.RAIZ_PROJETO), ".")
+        mensagem_publica = mensagem_publica.replace(config.NOME_BUCKET, "<BUCKET>")
+        print(f"[{instante}][{self.ambiente}] {mensagem_publica}", flush=True)
 
     def registrar_ambiente(self) -> Dict[str, str]:
         """Registra e devolve os metadados do ambiente de execução.

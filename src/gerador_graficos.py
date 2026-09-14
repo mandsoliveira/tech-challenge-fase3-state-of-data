@@ -220,8 +220,9 @@ def grafico_remuneracao() -> Path:
     eixo.legend(frameon=False, fontsize=8)
     _anotar_rodape(
         figura,
-        "Estimativa pelo ponto médio das faixas salariais; a faixa superior é aberta, "
-        "então o valor serve para comparar recortes, não como salário absoluto. "
+        "Valores nominais, não corrigidos pela inflação. Estimativa pelo ponto médio "
+        "das faixas salariais; a faixa superior é aberta, então os valores servem para "
+        "comparar recortes, não como remuneração absoluta. "
         f"'{SENIORIDADE_EXCLUSIVA_2025}' existe apenas na edição 2025-2026. "
         "Recortes com menos de 30 respondentes foram omitidos.",
     )
@@ -436,8 +437,11 @@ def grafico_modelo_trabalho() -> Path:
     pivotado = recorte.pivot_table(
         index="categoria", columns="metrica", values="percentual"
     ).fillna(0)
-    pivotado["diferenca"] = (
-        pivotado["modelo_trabalho_ideal"] - pivotado["modelo_trabalho_geral"]
+    pivotado = pivotado.assign(
+        diferenca=(
+            pivotado["modelo_trabalho_ideal"]
+            - pivotado["modelo_trabalho_geral"]
+        )
     )
     pivotado = pivotado.sort_values("modelo_trabalho_ideal")
 

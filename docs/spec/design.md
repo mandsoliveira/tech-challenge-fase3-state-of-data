@@ -50,7 +50,7 @@ flowchart LR
 Bucket único do projeto, com prefixos por camada. Bucket único simplifica a política de IAM e reduz superfície de erro de configuração.
 
 ```
-s3://sod-fase3-datalake-242201276836/
+s3://sod-fase3-datalake-<ID_DA_CONTA>/
 ├── bronze/state_of_data/edicao=2023/state_of_data_2023.csv
 ├── bronze/state_of_data/edicao=2024/state_of_data_2024.csv
 ├── bronze/state_of_data/edicao=2025/state_of_data_2025.csv

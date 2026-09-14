@@ -35,7 +35,7 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
     - Suportar `--valores DIMENSAO` para comparar distribuições
     - _Requisitos: R4.6_
 
-- [ ] 2. Configurar estrutura do projeto e ambiente
+- [x] 2. Configurar estrutura do projeto e ambiente
   - Criar diretórios: `src/transformacoes/`, `glue_jobs/`, `infra/`, `notebooks/`, `athena/`, `arquitetura/`, `output/img/`, `tests/`, `data/lake/`
   - Criar `src/__init__.py`, `src/transformacoes/__init__.py`, `tests/__init__.py`
   - Criar `requirements.txt` com versões fixas alinhadas ao Glue 5.0: `pyspark==3.5.4`, `pandas==2.2.3`, `matplotlib==3.9.2`, `seaborn==0.13.2`, `boto3`, `pytest`
@@ -46,8 +46,8 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
 
 ### Fase 2 — Pipeline em Spark local (frente A)
 
-- [ ] 3. Implementar o contexto de execução dual
-  - [ ] 3.1 Implementar `src/contexto_execucao.py`
+- [x] 3. Implementar o contexto de execução dual
+  - [x] 3.1 Implementar `src/contexto_execucao.py`
     - Classe `ContextoExecucao` com propriedades `spark`, `no_glue` e métodos `caminho`, `registrar`
     - Detectar ambiente Glue pela disponibilidade do módulo `awsglue`
     - No ambiente local: `SparkSession` com `master("local[*]")`, `spark.sql.shuffle.partitions=4`, Spark UI desabilitada
@@ -56,14 +56,14 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
     - Aceitar raiz do lake por parâmetro, com default por ambiente
     - _Requisitos: R10.1, R10.2, R10.3, R10.5_
 
-  - [ ] 3.2 Implementar leitura padronizada dos CSVs brutos
+  - [x] 3.2 Implementar leitura padronizada dos CSVs brutos
     - Função que aplica as opções verificadas: `header`, `multiLine`, `quote='"'`, `escape='"'`
     - Validar contagem de linhas contra o esperado por edição (5.293 / 5.217 / 3.495) e falhar em caso de divergência
     - Falhar com mensagem descritiva se o arquivo não existir
     - _Requisitos: R1.3, R1.4, R1.5_
 
-- [ ] 4. Implementar a transformação Bronze→Silver
-  - [ ] 4.1 Implementar sanitização de nomes de coluna em `src/transformacoes/sanitizacao.py`
+- [x] 4. Implementar a transformação Bronze→Silver
+  - [x] 4.1 Implementar sanitização de nomes de coluna em `src/transformacoes/sanitizacao.py`
     - Remover acentuação via decomposição Unicode (NFKD)
     - Converter para minúsculas, substituir caracteres fora de `[a-z0-9]` por `_`, colapsar `_` repetidos, remover `_` das extremidades
     - Preservar o código da pergunta no início do nome resultante
@@ -79,7 +79,7 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
     - Arquivo: `tests/test_sanitizacao.py`
     - **Valida: R3.1, R3.2, R3.3, R3.4**
 
-  - [ ] 4.3 Implementar normalização de valores categóricos em `src/transformacoes/normalizacao.py`
+  - [x] 4.3 Implementar normalização de valores categóricos em `src/transformacoes/normalizacao.py`
     - Corrigir `de R$ 101/mês a R$ 2.000/mês` para `de R$ 1.001/mês a R$ 2.000/mês` (edição 2023)
     - Corrigir `de R$ 25.001/mês a R$ 3000/mês` para `de R$ 25.001/mês a R$ 30.000/mês` (edição 2025)
     - Validar que restam exatamente 13 faixas salariais distintas e falhar caso contrário
@@ -97,7 +97,7 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
     - Arquivo: `tests/test_normalizacao.py`
     - **Valida: R6.3, R6.4, R6.5**
 
-  - [ ] 4.5 Implementar `src/transformacoes/bronze_para_silver.py`
+  - [x] 4.5 Implementar `src/transformacoes/bronze_para_silver.py`
     - Aplicar o mapeamento semântico para selecionar e renomear as 41 dimensões canônicas
     - Materializar dimensões ausentes como `lit(None)` com tipo explícito, garantindo schema idêntico entre edições
     - Aplicar a normalização de valores categóricos
@@ -114,8 +114,8 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
     - Arquivo: `tests/test_bronze_para_silver.py`
     - **Valida: R5.1, R1.5**
 
-- [ ] 5. Implementar a transformação Silver→Gold
-  - [ ] 5.1 Implementar utilitários de agregação em `src/agregacoes.py`
+- [x] 5. Implementar a transformação Silver→Gold
+  - [x] 5.1 Implementar utilitários de agregação em `src/agregacoes.py`
     - `contar_com_denominador_valido`: contagem excluindo nulos estruturais do denominador
     - `calcular_share`: proporção sobre o denominador válido
     - `explodir_multi_escolha`: separação de perguntas de múltipla escolha
@@ -133,7 +133,7 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
     - Arquivo: `tests/test_agregacoes.py`
     - **Valida: R5.2, R5.5**
 
-  - [ ] 5.3 Implementar as sete agregações em `src/transformacoes/silver_para_gold.py`
+  - [x] 5.3 Implementar as sete agregações em `src/transformacoes/silver_para_gold.py`
     - `perfil_mercado`: distribuição de cargo, senioridade, setor, porte e tempo de experiência por edição
     - `remuneracao`: faixa salarial cruzada com senioridade, região, modelo de trabalho e gênero
     - `diversidade`: gênero, cor/raça/etnia e PCD segmentados por senioridade e faixa salarial
@@ -146,14 +146,14 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
     - Explicitar em `tecnologias` e `adocao_ia` que a soma pode exceder 100% por múltipla escolha
     - _Requisitos: R8.1 a R8.9, R6.7, R7.4_
 
-  - [ ] 5.4 Implementar os entrypoints dos Glue Jobs
+  - [x] 5.4 Implementar os entrypoints dos Glue Jobs
     - `glue_jobs/job_bronze_para_silver.py`: lê `--raiz_lake` e `--edicoes`, chama a transformação, escreve Parquet particionado por `edicao`
     - `glue_jobs/job_silver_para_gold.py`: lê a Silver, gera as sete tabelas Gold, escreve Parquet
     - Ambos registram contagem de entrada e saída, versão do Spark e do Glue
     - Ambos funcionam sem alteração local e no Glue
     - _Requisitos: R9.1, R9.3, R10.4, R16.1_
 
-  - [ ] 5.5 Executar o pipeline completo localmente e validar por conferência cruzada
+  - [x] 5.5 Executar o pipeline completo localmente e validar por conferência cruzada
     - Rodar Bronze→Silver e Silver→Gold sobre `data/lake/` local
     - Conferir que a Silver tem 14.005 registros e o schema esperado
     - Conferir números selecionados da Gold contra o que o pandas produz direto do CSV bruto
@@ -162,9 +162,9 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
 
 ### Fase 3 — Infraestrutura AWS (frente B)
 
-- [ ] 6. Provisionar os recursos AWS de forma idempotente
-  - [ ] 6.1 Implementar `infra/provisionar.py`
-    - Criar bucket `sod-fase3-datalake-242201276836` em `us-east-1`
+- [x] 6. Provisionar os recursos AWS de forma idempotente
+  - [x] 6.1 Implementar `infra/provisionar.py`
+    - Criar bucket `sod-fase3-datalake-<ID_DA_CONTA>` em `us-east-1`
     - Habilitar as quatro flags de Block Public Access no bucket
     - Habilitar criptografia em repouso (SSE-S3)
     - Criar Glue Database dedicado ao projeto
@@ -172,33 +172,33 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
     - Tornar todas as operações idempotentes, para permitir reexecução
     - _Requisitos: R2.1, R2.2, R2.4, R2.5, R11.1_
 
-  - [ ] 6.2 Implementar verificação de segurança pós-provisionamento
+  - [x] 6.2 Implementar verificação de segurança pós-provisionamento
     - Verificar e reportar o estado das quatro flags de Block Public Access de cada bucket criado
     - Verificar que nenhuma política de bucket concede acesso a `Principal: "*"`, `AllUsers` ou `AuthenticatedUsers`
     - Verificar que nenhum recurso com endpoint público foi criado
     - Falhar caso qualquer verificação não passe
     - _Requisitos: R2.3, R2.4, R2.6_
 
-- [ ] 7. Ingerir os dados na camada Bronze
+- [x] 7. Ingerir os dados na camada Bronze
   - Fazer upload dos três CSVs para `bronze/state_of_data/edicao=<ano>/`, sem transformação
   - Registrar linhas e colunas de cada arquivo ingerido
   - Validar as contagens contra os valores esperados por edição
   - _Requisitos: R1.1, R1.2, R1.3, R1.5_
 
-- [ ] 8. Criar e executar os Glue Jobs, e catalogar as tabelas
-  - [ ] 8.1 Criar os dois Glue Jobs
+- [x] 8. Criar e executar os Glue Jobs, e catalogar as tabelas
+  - [x] 8.1 Criar os dois Glue Jobs
     - Glue version 5.0, worker `G.1X`, 2 workers
     - Fazer upload dos scripts e das dependências de `src/` para o S3
     - Associar a IAM role criada na tarefa 6.1
     - _Requisitos: R9.2_
 
-  - [ ] 8.2 Executar os jobs e coletar a evidência de execução
+  - [x] 8.2 Executar os jobs e coletar a evidência de execução
     - Executar Bronze→Silver e depois Silver→Gold
     - Coletar identificador de execução, horário de início e fim, registros lidos e escritos
     - Coletar a listagem dos objetos gerados em cada camada
     - _Requisitos: R16.1, R16.2_
 
-  - [ ] 8.3 Catalogar as camadas Silver e Gold
+  - [x] 8.3 Catalogar as camadas Silver e Gold
     - Criar e executar Glue Crawler sobre os prefixos `silver/` e `gold/`
     - Verificar que `edicao` foi registrada como coluna de partição
     - Verificar que cada tabela catalogada é consultável no Athena
@@ -206,14 +206,14 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
 
 ### Fase 4 — Análise e visualização (frente C)
 
-- [ ] 9. Escrever as consultas analíticas no Athena
+- [x] 9. Escrever as consultas analíticas no Athena
   - Criar em `athena/` uma consulta SQL versionada por pergunta de negócio
   - Configurar o local de resultados para `s3://<bucket>/athena-results/`
   - Garantir que toda consulta que calcula percentual exclui nulos estruturais do denominador
   - Executar cada consulta e registrar o resultado de ao menos uma delas como evidência
   - _Requisitos: R12.1, R12.2, R12.3, R12.4, R16.3_
 
-- [ ] 10. Gerar os gráficos a partir da camada Gold
+- [x] 10. Gerar os gráficos a partir da camada Gold
   - Implementar `src/gerador_graficos.py` lendo exclusivamente as tabelas Gold, nunca os CSVs brutos
   - Gerar no mínimo um gráfico por pergunta de negócio
   - Ordenar faixas salariais por `faixa_salarial_ordem`
@@ -222,30 +222,27 @@ O plano é organizado em quatro frentes que podem correr em paralelo após a Fas
   - Exportar as imagens em `output/img/`
   - _Requisitos: R13.1 a R13.6_
 
-- [ ] 11. Montar os notebooks de entrega
-  - `notebooks/01_ingestao_bronze.ipynb`: ingestão e validação das contagens
-  - `notebooks/02_bronze_para_silver.ipynb`: sanitização, harmonização e normalização
-  - `notebooks/03_silver_para_gold.ipynb`: as sete agregações
-  - `notebooks/04_analise_athena.ipynb`: consultas SQL e resultados
-  - `notebooks/05_graficos.ipynb`: geração dos gráficos
-  - Todos importando os módulos de `src/`, sem duplicar lógica
+- [x] 11. Consolidar o notebook de entrega
+  - Manter `notebooks/pipeline_state_of_data.ipynb` como fluxo único e executado, com ingestão, Bronze→Silver, Silver→Gold, validações, análise e gráficos
+  - Importar os módulos de `src/`, sem duplicar lógica
+  - Preservar as saídas da execução como evidência de reprodutibilidade
   - _Requisitos: R17.5_
 
 ### Fase 5 — Entregáveis (frente D)
 
-- [ ] 12. Construir o diagrama da arquitetura
+- [x] 12. Construir o diagrama da arquitetura
   - Desenhar no Draw.io o fluxo da ingestão ao consumo analítico
   - Representar as três camadas do Data Lake, os Glue Jobs, o Glue Data Catalog e o Athena
   - Versionar o arquivo `.drawio` em `arquitetura/`
   - Exportar como imagem para inclusão no material executivo
   - _Requisitos: R14.1 a R14.5_
 
-- [ ] 13. Consolidar a evidência de execução
+- [x] 13. Consolidar a evidência de execução
   - Reunir identificadores de execução dos jobs, contagens, listagem de objetos do S3 e resultado de consulta Athena
   - Versionar o artefato consolidado no repositório
   - _Requisitos: R16.4_
 
-- [ ] 14. Produzir o material executivo
+- [x] 14. Produzir o material executivo
   - Montar apresentação em PDF ou PowerPoint com indicadores, análises, insights e recomendações
   - Construir narrativa sobre perfil profissional, tendências, tecnologias, remuneração, senioridade e modelos de trabalho
   - Propor recomendações estratégicas de contratação, capacitação e investimento em Dados, Analytics e IA

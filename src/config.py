@@ -19,11 +19,45 @@ from typing import Dict, Final
 # ---------------------------------------------------------------------------
 # AWS
 # ---------------------------------------------------------------------------
+# O identificador da conta NÃO é versionado. Ele não é uma credencial — sozinho
+# não dá acesso a nada — mas publicá-lo num repositório aberto permite phishing
+# direcionado e vincula o repositório a uma conta específica.
+#
+# A resolução segue esta ordem:
+#   1. variável de ambiente SOD_ID_CONTA
+#   2. a conta ativa das credenciais AWS locais, via STS
+#
+# Assim quem clonar o projeto roda na própria conta sem editar código.
 
-ID_CONTA: Final[str] = "242201276836"
-REGIAO: Final[str] = "us-east-1"
 
-# Bucket único do Data Lake, com separação lógica por prefixo de camada.
+def _resolver_id_conta() -> str:
+    """Descobre o identificador da conta AWS a ser usada.
+
+    Returns:
+        O identificador de 12 dígitos da conta, ou `PLACEHOLDER` quando não for
+        possível determinar. O placeholder permite importar este módulo em
+        ambientes sem credenciais AWS — útil para rodar o pipeline apenas local,
+        que não precisa de conta nenhuma.
+    """
+    do_ambiente = os.environ.get("SOD_ID_CONTA", "").strip()
+    if do_ambiente:
+        return do_ambiente
+
+    try:
+        import boto3  # noqa: PLC0415
+
+        return boto3.client("sts").get_caller_identity()["Account"]
+    except Exception:
+        # Sem boto3, sem credenciais, ou sem rede. A execução local do pipeline
+        # não depende disso; apenas os scripts de `infra/` precisam.
+        return "PLACEHOLDER"
+
+
+ID_CONTA: Final[str] = _resolver_id_conta()
+REGIAO: Final[str] = os.environ.get("AWS_REGION", "us-east-1")
+
+# Bucket único do Data Lake, com separação lógica por prefixo de camada. O nome
+# inclui o identificador da conta porque nomes de bucket são globais no S3.
 NOME_BUCKET: Final[str] = f"sod-fase3-datalake-{ID_CONTA}"
 
 NOME_DATABASE_GLUE: Final[str] = "sod_fase3"

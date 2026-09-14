@@ -517,9 +517,9 @@ def slide_remuneracao(apresentacao: Presentation, dados: Dict) -> None:
     )
     _rodape(
         slide,
-        "Salário estimado pelo ponto médio das faixas declaradas; a faixa superior é aberta, então os valores servem para "
-        "comparar recortes, não como remuneração absoluta. Recortes com menos de 30 respondentes foram omitidos. "
-        "Especialista/Staff+ existe apenas na edição 2025-2026.",
+        "Valores nominais, não corrigidos pela inflação. Salário estimado pelo ponto médio das faixas; a faixa superior "
+        "é aberta, então os valores servem para comparar recortes, não como remuneração absoluta. Recortes com menos "
+        "de 30 respondentes foram omitidos. Especialista/Staff+ existe apenas em 2025-2026.",
     )
 
 
@@ -1017,6 +1017,14 @@ def gerar(destino: Optional[Path] = None) -> Path:
     apresentacao = Presentation()
     apresentacao.slide_width = LARGURA
     apresentacao.slide_height = ALTURA
+    propriedades = apresentacao.core_properties
+    propriedades.title = "Material Executivo — State of Data Brasil"
+    propriedades.subject = "Tech Challenge Fase 3 — Engenharia de Dados e Analytics em AWS"
+    propriedades.author = "Equipe do Tech Challenge"
+    propriedades.last_modified_by = "Equipe do Tech Challenge"
+    propriedades.category = "Material acadêmico"
+    propriedades.keywords = "State of Data, AWS, Engenharia de Dados, Analytics"
+    propriedades.comments = "Gerado de forma reproduzível a partir da camada Gold."
 
     slide_capa(apresentacao, dados)
     slide_sumario_executivo(apresentacao, dados)

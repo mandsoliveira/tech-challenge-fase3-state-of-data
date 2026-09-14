@@ -1,8 +1,8 @@
 {
   "coletado_em": "2026-09-05T02:24:19.225749+00:00",
-  "conta": "242201276836",
+  "conta": "<ID_DA_CONTA>",
   "regiao": "us-east-1",
-  "bucket": "sod-fase3-datalake-242201276836",
+  "bucket": "sod-fase3-datalake-<ID_DA_CONTA>",
   "database_glue": "sod_fase3",
   "execucoes": [
     {
@@ -75,5 +75,6 @@
         "gold/diversidade/part-00006-12692b4f-25ce-4d26-b2ba-3bca374a8746-c000.snappy.parquet"
       ]
     }
-  ]
+  ],
+  "_nota": "O identificador da conta AWS foi mascarado como <ID_DA_CONTA>. Os identificadores de execucao dos jobs, duracoes, DPU consumida e contagens de objetos sao os valores reais da execucao."
 }
