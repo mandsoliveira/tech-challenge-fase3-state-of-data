@@ -37,8 +37,10 @@ derby.log
 # Os artefatos abaixo SÃO entregáveis e devem ir para o repositório:
 #
 #   output/*.pptx              material executivo
+#   output/*.docx|*.pdf         relatório técnico
 #   output/img/*.png           gráficos que sustentam o material
-#   output/evidencias/*.json   evidência de execução na AWS (requisito R16.4)
+#   output/evidencias/*.json   evidência estruturada da execução na AWS
+#   output/prints/*.png        capturas do console AWS sem identificadores internos
 #   arquitetura/*.drawio       fonte do diagrama
 #   arquitetura/*.png|.pdf     diagrama exportado
 #   notebooks/*.ipynb          notebook com as saídas da execução

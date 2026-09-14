@@ -20,6 +20,11 @@ pandas==2.2.3
 pyarrow==17.0.0
 matplotlib==3.9.2
 seaborn==0.13.2
+python-pptx==1.0.2
+python-docx==1.2.0
+reportlab==4.4.10
+pypdf==6.17.0
+Pillow==12.2.0
 boto3==1.35.36
 pytest==8.3.3
 jupyter==1.1.1
